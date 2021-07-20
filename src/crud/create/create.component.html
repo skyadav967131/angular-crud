@@ -1,0 +1,17 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+    <label for="Name">Name: </label>
+    <input id="Name" type="text" formControlName="Name">
+  
+    <label for="Description">Description: </label>
+    <input id="Description" type="text" formControlName="Description">
+
+    <label for="Price">Price: </label>
+    <input id="Price" type="text" formControlName="Price">
+  
+    <label for="Quantity">Quantity: </label>
+    <input id="Quantity" type="text" formControlName="Quantity">
+
+    <button type="submit">submit</button>
+  </form>
+  <router-outlet></router-outlet>
